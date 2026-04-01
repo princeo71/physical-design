@@ -1,10 +1,10 @@
 # Physical Design - Course Notes Repository
 
-Welcome to your comprehensive course notes repository! This repository is organized by units and sessions to help you track your learning progress.
+Welcome to my comprehensive course notes repository! This repository is organized by units and sessions to help  track the learning progress.
 
 ## Repository Structure
 
-Each unit is a separate folder containing markdown files for individual sessions. You can add your notes directly to each session file.
+Each unit is a separate folder containing markdown files for individual sessions.
 
 ---
 
@@ -166,49 +166,5 @@ Each unit is a separate folder containing markdown files for individual sessions
 
 ---
 
-## How to Use This Repository
 
-1. **Navigate to Your Unit**: Go to the folder that corresponds to the unit you're studying
-2. **Open Session File**: Open the markdown file for the session you're currently on
-3. **Add Your Notes**: Each session file has a template with sections for:
-   - **Topics Covered**: Main topics discussed
-   - **Key Concepts**: Important concepts to remember
-   - **Notes**: Your personal notes from the session
-   - **Examples**: Important examples and use cases
-   - **Resources**: References and useful links
-
-4. **Commit Changes**: Once you've added your notes, commit them to git with a descriptive message
-
----
-
-## Git Setup
-
-This repository is initialized as a Git repository. To push it to GitHub:
-
-```bash
-# Add all files
-git add .
-
-# Initial commit
-git commit -m "Initial commit: Course structure with all 131 sessions"
-
-# Add GitHub remote (replace with your repo URL)
-git remote add origin https://github.com/yourusername/physical-design.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
----
-
-## Tips for Note-Taking
-
-- Use **markdown formatting** for better readability
-- Include **code snippets** where applicable
-- Create **diagrams** using ASCII art or markdown
-- Cross-reference related sessions
-- Update your notes periodically as you learn more
-
-Happy Learning! 📚
 
