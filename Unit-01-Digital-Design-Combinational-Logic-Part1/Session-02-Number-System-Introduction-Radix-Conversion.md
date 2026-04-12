@@ -85,19 +85,20 @@ Answer → 101101₂
 
 #### ➤ Decimal → Octal
 
+```text
 45 ÷ 8 = 5 r5
 5 ÷ 8 = 0 r5
 
 Answer → 55₈
-
+```
 
 #### ➤ Decimal → Hex
-
+```text
 45 ÷ 16 = 2 r13 (D)
 2 ÷ 16 = 0 r2
 
 Answer → 2D₁₆
-
+```
 
 ---
 
@@ -105,13 +106,13 @@ Answer → 2D₁₆
 **Convert:** `157₈`
 
 #### ➤ Octal → Binary
-
+```text
 1 → 001
 5 → 101
 7 → 111
 
 → 001 101 111 = 1101111₂
-
+```
 
 #### ➤ Octal → Decimal
 
@@ -131,12 +132,12 @@ Binary → 0110 1111
 **Convert:** `3A₁₆`
 
 #### ➤ Hex → Binary
-
+```text
 3 → 0011
 A → 1010
 
 → 00111010₂
-
+```
 
 #### ➤ Hex → Decimal
 
