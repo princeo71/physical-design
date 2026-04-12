@@ -153,9 +153,11 @@ Binary → 001 110 100
 ## 🎯 Final Visual Summary
 
 Binary ↔ Octal → group 3 bits
+
 Binary ↔ Hex → group 4 bits
 
 Any Base → Decimal → multiply & add
+
 Decimal → Any Base → divide & remainder
 
 
