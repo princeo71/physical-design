@@ -1,110 +1,71 @@
-# Session 2: Number System Introduction and Radix Conversion
+# Session 02: Number System Introduction & Radix Conversion
 
-## Topics Covered
-- Number systems: Binary, Octal, Decimal, Hexadecimal
-- Base (radix) and digit representation
-- Place value system
-- Powers of base (2, 8, 10, 16)
-- Base conversion methods
-- Binary ↔ Octal/Hex shortcuts
+## Learning Outcomes
+- Understand the different types of number systems.
+- Learn how to convert between various number systems.
+- Gain insights into practical applications of number systems in digital design.
 
-## Key Concepts
-- Number System: Method to represent numbers using a base
-- Base (Radix): Total number of unique digits (e.g., binary = 2)
-- Place Value: Each digit = digit × base^position
-- Binary System: Uses only 0 and 1 (used in computers)
-- Octal System: Base 8 (0–7), groups of 3 binary bits
-- Hexadecimal: Base 16 (0–9, A–F), groups of 4 binary bits
-- Conversion Rules:
-    -Any base → Decimal → multiply & add
-    -Decimal → any base → divide & remainder
-    -Binary ↔ Hex/Octal → grouping shortcut
+## Introduction
+In this session, we will explore the concept of number systems, which forms the foundation of digital design. Number systems are essential as they represent data in a form that a digital system can process.
 
-## Notes
-- Always count positions from right → left starting at 0
-- In division method, reverse remainders at the end
-- For binary grouping:
-    - Hex → groups of 4 bits
-    - Octal → groups of 3 bits
-- Add leading zeros if grouping is incomplete
-- Hex values:
-    A=10, B=11, C=12, D=13, E=14, F=15
+## Types of Number Systems
+1. **Decimal (Base 10)**: The standard system used by humans, utilizing digits from 0 to 9.
+2. **Binary (Base 2)**: The fundamental number system used by computers, consisting of only 0 and 1.
+3. **Octal (Base 8)**: Uses digits from 0 to 7. Each octal digit represents three binary digits (bits).
+4. **Hexadecimal (Base 16)**: Uses digits from 0 to 9 and letters A to F. Each hexadecimal digit represents four binary digits.
 
-## Examples
-- 1) Binary → Other Systems
-Convert: 101101₂
-➤ Step 1: Binary → Decimal
-Position →   5   4   3   2   1   0
-             ↓   ↓   ↓   ↓   ↓   ↓
-Binary   →   1   0   1   1   0   1
+## Radix Conversion
+### Decimal to Binary
+- Method: Repeated division by 2.
+- Example: Decimal 10 to Binary
+  - 10 / 2 = 5 remainder 0
+  - 5 / 2 = 2 remainder 1
+  - 2 / 2 = 1 remainder 0
+  - 1 / 2 = 0 remainder 1
+  - **Binary: 1010**
 
-= 1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰
-= 32 + 0 + 8 + 4 + 0 + 1 = 45₁₀
-➤ Step 2: Binary → Octal (group 3 bits)
-101 101 → (5)(5) → 55₈
-➤ Step 3: Binary → Hex (group 4 bits)
-0010 1101 → (2)(D) → 2D₁₆
+### Binary to Decimal
+- Method: Summation of powers of 2.
+- Example: Binary 1010 to Decimal
+  - (1 × 2^3) + (0 × 2^2) + (1 × 2^1) + (0 × 2^0) = 8 + 0 + 2 + 0 = **10**
 
-🔹 2) Decimal → Other Systems
-Convert: 45₁₀
-➤ Decimal → Binary (division method45 ÷ 2 = 22 r1
-22 ÷ 2 = 11 r-0
-11 ÷ 2 = 5  r-1
-5  ÷ 2 = 2  r-1
-2  ÷ 2 = 1  r-0
-1  ÷ 2 = 0  r-1
-Answer → 101101₂)
+### Decimal to Octal
+### Octal to Decimal
+### Decimal to Hexadecimal
+### Hexadecimal to Decimal
 
-➤ Decimal → Octal
-45 ÷ 8 = 5 r-5
-5 ÷ 8 = 0 r-5
-Answer → 55₈
+| **Conversion**         | **Method**                    | **Example**                     |
+|------------------------|-------------------------------|---------------------------------|
+| Decimal to Binary      | Repeated division by 2        | 10 -> 1010                      |
+| Binary to Decimal      | Summation of powers of 2      | 1010 -> 10                      |
+| Decimal to Octal      | Repeated division by 8        | 10 -> 12                       |
+| Octal to Decimal       | Summation of powers of 8      | 12 -> 10                       |
+| Decimal to Hexadecimal | Repeated division by 16       | 10 -> A                        |
+| Hexadecimal to Decimal | Summation of powers of 16     | A -> 10                         |
 
-➤ Decimal → Hex
-45 ÷ 16 = 2 r-13 (D)
-2 ÷ 16 = 0 r-2
-Answer → 2D₁₆
+## Common Mistakes
+- Confusing binary and decimal values.
+- Forgetting place value in conversions.
+- Misapplying the conversion methods.
 
-🔹 3) Octal → Other Systems
-Convert: 157₈
-➤ Octal → Binary (each digit = 3 bits)
-1 → 001
-5 → 101
-7 → 111
-→ 001 101 111 = 1101111₂
+## Practice Problems
+1. Convert the decimal number 25 to binary.
+2. Convert the binary number 11011 to decimal.
+3. Convert the octal number 17 to decimal.
+4. Convert the hexadecimal number 1F to decimal.
 
-➤ Octal → Decimal
-= 1×8² + 5×8¹ + 7×8⁰
-= 64 + 40 + 7 = 111₁₀
+## Verification Methods
+- Check conversions by re-converting to the original system.
+- Use tools and calculators for complex numbers.
 
-➤ Octal → Hex (via Binary)
-Binary → 0110 1111
-→ (6)(F) → 6F₁₆
+## Real-World Applications
+- Number systems are used in programming, digital circuits, and data representation.
+- Understanding these systems is crucial for designing efficient algorithms and digital systems that interact with computers.
 
-🔹 4) Hexadecimal → Other Systems
-Convert: 3A₁₆
-➤ Hex → Binary (each digit = 4 bits)
-3 → 0011
-A → 1010
-→ 00111010₂
+---
+### Original Detailed Examples
+#### Example 1: Conversion of 5.75 from Decimal to Binary
+5.75 is split into the integer and fractional parts. The integer part (5) converts to binary (101), and the fractional part (.75) converts by multiplying by 2 and taking whole numbers.
 
-➤ Hex → Decimal
-= 3×16¹ + 10×16⁰
-= 48 + 10 = 58₁₀
-
-➤ Hex → Octal (via Binary)
-Binary → 001 110 100
-→ (1)(6)(4) → 164₈
-
-🎯 Final Visual Summary
-Binary  ↔  Octal  (group 3 bits)
-Binary  ↔  Hex    (group 4 bits)
-
-Any Base → Decimal → multiply & add
-Decimal → Any Base → divide & remainder
-
-💡 Quick Revision Trick:
-
-Binary → group
-Decimal → divide
-Others → go via Binary or Decimal
+#### Example 2: Binary Arithmetic
+Understanding binary arithmetic is crucial for computer operations. Operations like addition, subtraction, and multiplication are performed differently compared to decimal due to the binary system's limitations.
