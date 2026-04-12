@@ -1,6 +1,6 @@
 # Session 02: Number System Introduction & Radix Conversion
 
-📚 Topics Covered
+# Topics Covered
 Number systems: Binary, Octal, Decimal, Hexadecimal
 Base (radix) and digit representation
 Place value system
