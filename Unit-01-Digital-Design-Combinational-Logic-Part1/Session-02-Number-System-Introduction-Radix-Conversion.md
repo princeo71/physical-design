@@ -71,14 +71,16 @@ Binary → 1 0 1 1 0 1
 
 #### ➤ Decimal → Binary
 
-<pre> ```text id="align01"45 ÷ 2 = 22 r1
-22 ÷ 2 = 11 r0
-11 ÷ 2 = 5 r1
-5 ÷ 2 = 2 r1
-2 ÷ 2 = 1 r0
-1 ÷ 2 = 0 r1
+```text
+45 ÷ 2 = 22  r1
+22 ÷ 2 = 11  r0
+11 ÷ 2 =  5  r1
+ 5 ÷ 2 =  2  r1
+ 2 ÷ 2 =  1  r0
+ 1 ÷ 2 =  0  r1
 
-Answer → 101101₂``` </pre>
+Answer → 101101₂
+```
 
 
 #### ➤ Decimal → Octal
